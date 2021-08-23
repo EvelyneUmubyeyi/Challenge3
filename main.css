@@ -28,6 +28,10 @@ h1,h2,h3{
     font-weight: 700;
     color:hsl(192, 100%, 9%);
 }
+h2{
+    font-size: 2em;
+    padding-bottom: 0.8em;
+}
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -44,7 +48,13 @@ body{
     font-weight: 700;
     display: inline-block;
 }
-.second-button{
+.first-button:hover{
+    background-color: white;
+    color:  hsl(321, 100%, 78%);
+    border: 1px solid   hsl(321, 100%, 78%);
+    cursor: pointer;
+}
+.cta{
     border-radius: 80px;
     background-color: hsl(322, 100%, 66%);;
     border:none;
@@ -57,18 +67,9 @@ body{
     font-weight: 700;
     box-shadow: 5px 5px 18px 1px rgba(0, 0, 255, 0.164);
 }
-.third-button{
-    border-radius: 80px;
-    background-color: hsl(322, 100%, 66%);
-    border:none;
-    color: white;
-    padding: 1.3em 4.6em;
-    text-align: center;
-    text-decoration: none;
-    font-size: 0.7em;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700; 
-    box-shadow: 5px 5px 18px 1px rgba(0, 0, 255, 0.164);  
+.cta:hover{
+    background-color: hsl(321, 100%, 78%);
+    cursor: pointer;
 }
 .fourth-button{
     border-radius: 5px;
@@ -81,6 +82,11 @@ body{
     font-size: 0.6em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700; 
+}
+.fourth-button:hover{
+    background-color: hsl(321, 100%, 78%);
+    cursor: pointer;
+ 
 }
 input{
     border-radius: 5px;  
@@ -106,7 +112,7 @@ input:focus{
 }
 .community-sub,.messages-sub{
     color:grey;
-    font-weight: 500;
+    font-weight: 600;
     font-size: medium;
 }
 .second,.third,.fourth{
@@ -133,6 +139,12 @@ a{
     font-size: x-large;
     color: white;
 }
+.fab:hover {
+    background-color: hsl(192, 100%, 9%);
+    border-radius: 5px;
+    color: hsl(192, 97%, 38%);
+    cursor: pointer;
+}
 
 header{
     display: flex;
@@ -156,7 +168,7 @@ header{
 }
 .heading{
     font-size: 2.4em;
-    font-weight: 900;
+    font-weight: 1200;
 }
 .tables{
     width:85em;
@@ -224,7 +236,7 @@ header{
 .your-users-paragraph{
     width: 28em;
 }
-.cta{
+.cta-section{
     padding-top: 6em;
     padding-bottom: 10em;
     display: flex;
@@ -232,7 +244,7 @@ header{
     align-items: center;
 }
 .h24{
-    font-size: 2.3em;
+    font-size: 2em;
     font-weight: 900;
     padding-bottom: 1em;
 }
@@ -250,7 +262,8 @@ header{
     box-shadow: 5px 5px 18px 1px rgba(0, 0, 255, 0.164);
 }
 footer{
-    height:25em;
+    height:21em;
+    width: 84em;
     display: flex;
     padding-top: 4em;
     justify-content: space-evenly;
@@ -278,7 +291,6 @@ footer{
 }
 .logo-footer{
     padding-bottom: 1em;
-    color: white;
 }
 
 h3{
@@ -286,6 +298,7 @@ h3{
 }
 .background1{
     height:10em;
+    width: 84em;
     background-image: url(../images/bg-section-top-desktop-1.svg);
     background-position: end;
     background-repeat: no-repeat;
@@ -296,6 +309,7 @@ h3{
  
 .background2{
     height:10em;
+    width: 84em;
     background-image: url(../images/bg-section-bottom-desktop-2.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -305,6 +319,7 @@ h3{
  
 .background3{
     height:9.7em;
+    width: 84em;
     background-image: url(../images/bg-footer-top-desktop.svg);
     background-position: end;
     background-repeat: no-repeat;
@@ -312,8 +327,210 @@ h3{
     border: none;
 }
 .phone{
-    font-size: 0.7em;
-}
-.email{
     font-size: 0.7em; 
+}
+.email1{
+    font-size: 0.7em; 
+}
+#error {
+    color: hsl(354, 100%, 66%);
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1cm;
+}
+
+#success {
+    color: hsl(98, 76%, 43%);
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1cm;
+    }
+
+@media screen and (max-width: 430px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+   .pagecontainer{
+      width: 100%; 
+      padding: 0;
+      margin: 0;
+   }
+   main{
+       text-align: center;
+   }
+   header{
+    justify-content: space-around;
+    width: 100%;
+    height: 5em;
+    padding-left: 0;
+    margin: 0;
+    padding-bottom: 7em;
+   }
+   .logo{
+    height: 1.5em;
+   }
+   .first-button{
+    padding: 0.5em 2em;
+    font-size: x-small;
+   }
+   .heading{
+       font-size: x-large;
+       width: 80%;
+       padding-bottom: 1em;
+   }
+   .first{
+       width: 80%;
+       text-align: center;
+       padding-bottom: 3em;
+   }
+   .cta{
+    font-size: x-small;
+    padding: 1.1em 3.5em; 
+   }
+   .tables{
+    width:100%;
+    height: 20em;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+.tables-img{
+    width: 85%;
+}
+.figures{
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+}
+.community{
+    padding-bottom: 6em;
+}
+.grow-together{
+    flex-direction: column-reverse;
+    width: 100%;
+    height:20em;
+}
+.illustration-grow-together{
+    width: 70%;
+    padding-bottom: 5em;
+    padding-top: 0em;
+}
+.h21{
+    padding-bottom: 0.6em;
+    font-size: 1.2em;
+}
+.grow-together-paragraph{
+    width: 80%;
+    padding-bottom: 0em;
+}
+.flowing-conversations{
+    flex-direction: column;
+    width: 100%;
+    height:20em;
+}
+.illustration-flowing-conversations{
+    width: 70%;
+    padding-bottom: 5em;
+}
+.h22{
+    padding-bottom: 0.6em;
+    font-size: 1.2em;
+}
+.flowing-conversations-paragraph{
+    width: 80%;
+}
+.your-users{
+    flex-direction: column-reverse;
+    width: 100%;
+    height:20em;
+}
+.illustration-your-users{
+    width: 70%;
+    padding-bottom: 5em;
+}
+.h23{
+    padding-bottom: 0.6em;
+    font-size: 1.2em;
+}
+.your-users-paragraph{
+    width: 80%;
+}
+.cta-section{
+    padding-top: 2em;
+    padding-bottom: 12em;
+}
+.h24{
+    font-size: 1.4em;
+    padding-bottom: 1.8em;
+}
+footer{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 50em;
+}
+.fifth,.seventh{
+    font-size: 0.8em;
+    font-weight: 600;
+}
+.fifth{
+    padding-bottom: 3em;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+input{
+    padding: 1em 6.5em;
+    margin-bottom: 1.2em;
+}
+.fourth-button{
+    padding: 0.8em 3.2em;
+    font-size: 0.9em;
+    margin-bottom: 6em;
+}
+.left{
+    width: 90%;
+}
+.phone,.email1{
+font-size: 0.8em;
+font-weight: 600;
+}
+.phone-us{
+    padding-bottom: 1.2em;
+}
+.background1{
+    height:18.75em;
+    width:100%;
+    background-image: url(../images/bg-section-top-mobile-1.svg);
+    background-position: end;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border: none;  
+}
+
+
+.background2{
+    height:12.5em;
+    width:100%;
+    background-image: url(../images/bg-section-bottom-mobile-1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border: none;
+}
+
+.background3{
+    height:6.25em;
+    width:100%;
+    background-image: url(../images/bg-footer-top-mobile.svg);
+    background-position: end;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border: none;
+}
 }
