@@ -1,0 +1,319 @@
+/*footer{
+    background-image: url(../images/bg-footer-top-desktop.svg);
+    background-repeat: no-repeat;
+}*/
+/*@media screen and (max-width: 430px) {
+    .pagecontainer{
+        width: 100vw;
+        height: 100vh;
+    }   
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+   /* .logo{
+        height: 1.5em;
+        margin-top: 2em;
+        margin-left: 1.3em;
+        margin-right: 2em;
+        margin-bottom: 5em;
+        
+    }}*/
+*{
+    padding: 0em;
+    margin: 0em;
+}
+h1,h2,h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color:hsl(192, 100%, 9%);
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.first-button{
+    border-radius: 80px;
+    background-color: white;
+    border:1px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+    padding: 0.5em 3em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.7em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+}
+.second-button{
+    border-radius: 80px;
+    background-color: hsl(322, 100%, 66%);;
+    border:none;
+    color: white;
+    padding: 2em 7.5em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.7em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    box-shadow: 5px 5px 18px 1px rgba(0, 0, 255, 0.164);
+}
+.third-button{
+    border-radius: 80px;
+    background-color: hsl(322, 100%, 66%);
+    border:none;
+    color: white;
+    padding: 1.3em 4.6em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.7em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700; 
+    box-shadow: 5px 5px 18px 1px rgba(0, 0, 255, 0.164);  
+}
+.fourth-button{
+    border-radius: 5px;
+    background-color: hsl(322, 100%, 66%);
+    border:none;
+    color: white;
+    padding: 0.8em 1.9em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.6em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700; 
+}
+input{
+    border-radius: 5px;  
+    background-color: white;
+    padding: 0.4em 1em;
+    color: hsl(192, 100%, 9%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    text-decoration: none;
+    font-weight: 700; 
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+.first{
+    color: hsl(192, 100%, 9%);
+    font-weight: 700;
+    font-size: medium;
+    width: 30em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+.community-sub,.messages-sub{
+    color:grey;
+    font-weight: 500;
+    font-size: medium;
+}
+.second,.third,.fourth{
+    color:hsl(192, 100%, 9%);
+    font-weight: 700;
+    font-size: smaller;
+}
+.fifth,.seventh{
+    color: white;
+    font-weight: 700;
+    font-size: x-small;
+}
+.sixth{
+    color: white;
+    font-size: smaller;
+    font-weight: 700;
+}
+h3{
+    color: white;
+}
+a{
+    text-decoration: none;
+    padding:5px;
+    font-size: x-large;
+    color: white;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 8em;
+    padding-left: 3em;
+    padding-right: 2em;
+    padding-bottom: 5em;
+    width: 78em;
+}
+.introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height:15em;
+    padding-bottom: 5em;
+}
+.heading{
+    font-size: 2.4em;
+    font-weight: 900;
+}
+.tables{
+    width:85em;
+    height: 40em;
+    text-align: center;
+}
+.tables-img{
+    width: 50em;
+}
+.figures{
+    display: flex;
+    justify-content: space-around;
+    height: 15em;
+}
+.community-figure{
+    font-size: xxx-large;
+    padding-bottom: 0.2em;
+}
+.messages-figure{
+    font-size: xxx-large;  
+    padding-bottom: 0.2em;
+}
+.grow-together{
+    width: 84em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+    background-color: hsl(207, 100%, 98%);
+}
+.illustration-grow-together{
+    width: 28em;
+}
+.grow-together-paragraph{
+    width: 28em;
+}
+.flowing-conversations{
+    width: 84em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+   
+}
+.illustration-flowing-conversations{
+    width: 28em;
+}
+.flowing-conversations-paragraph{
+    width: 28em;
+}
+.your-users{
+    width: 84em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+    background-color: hsl(207, 100%, 98%);
+}
+.illustration-your-users{
+    width: 28em;
+}
+.your-users-paragraph{
+    width: 28em;
+}
+.cta{
+    padding-top: 6em;
+    padding-bottom: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h24{
+    font-size: 2.3em;
+    font-weight: 900;
+    padding-bottom: 1em;
+}
+.third-button{
+    border-radius: 80px;
+    background-color: hsl(322, 100%, 66%);;
+    border:none;
+    color: white;
+    padding: 2em 7.5em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.7em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    box-shadow: 5px 5px 18px 1px rgba(0, 0, 255, 0.164);
+}
+footer{
+    height:25em;
+    display: flex;
+    padding-top: 4em;
+    justify-content: space-evenly;
+    background-color:hsl(192, 100%, 9%);
+}
+.fifth{
+    width: 20em;
+    padding-bottom: 2em;
+}
+.phone-us{
+    padding-bottom: 0.5em;
+    color: white;
+    font-weight: 600;
+}
+.email-us{
+    color: white;
+    font-weight: 600;
+}
+.icons{
+    padding-top: 3em;
+}
+.seventh{
+    width: 25em;
+    padding-bottom: 3em;
+}
+.logo-footer{
+    padding-bottom: 1em;
+    color: white;
+}
+
+h3{
+    padding-bottom: 1em;
+}
+.background1{
+    height:10em;
+    background-image: url(../images/bg-section-top-desktop-1.svg);
+    background-position: end;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border: none;  
+}
+ 
+ 
+.background2{
+    height:10em;
+    background-image: url(../images/bg-section-bottom-desktop-2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border: none;
+}
+ 
+.background3{
+    height:9.7em;
+    background-image: url(../images/bg-footer-top-desktop.svg);
+    background-position: end;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border: none;
+}
+.phone{
+    font-size: 0.7em;
+}
+.email{
+    font-size: 0.7em; 
+}
